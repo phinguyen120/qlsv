@@ -43,7 +43,7 @@ public class frmSinhVien extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         txtMaSV = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        txtHoTen = new javax.swing.JTextField();
+        txtName = new javax.swing.JTextField();
         rdNam = new javax.swing.JRadioButton();
         rdNu = new javax.swing.JRadioButton();
         jLabel3 = new javax.swing.JLabel();
@@ -114,7 +114,7 @@ public class frmSinhVien extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(txtMaSV)
                                 .addGap(58, 58, 58))
-                            .addComponent(txtHoTen)
+                            .addComponent(txtName)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(txtNgaySinh)
                                 .addGap(61, 61, 61))
@@ -149,7 +149,7 @@ public class frmSinhVien extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel2)
-                            .addComponent(txtHoTen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(rdNam)
@@ -268,7 +268,7 @@ public class frmSinhVien extends javax.swing.JFrame {
     //get thong tin sinh vien
     private SinhVien getSVInfo(){
         String masv= txtMaSV.getText();
-        String hoten = txtHoTen.getText();
+        String hoten = txtName.getText();
         String ngaysinh = txtNgaySinh.getText();
         String gioiTinh="";
         if(rdNam.isSelected()){
@@ -331,7 +331,7 @@ public class frmSinhVien extends javax.swing.JFrame {
     private javax.swing.JRadioButton rdNu;
     private javax.swing.JTable tblSinhVien;
     private javax.swing.JTextField txtDiemTB;
-    private javax.swing.JTextField txtHoTen;
+    private javax.swing.JTextField txtName;
     private javax.swing.JTextField txtMaSV;
     private javax.swing.JTextField txtNgaySinh;
     // End of variables declaration//GEN-END:variables
